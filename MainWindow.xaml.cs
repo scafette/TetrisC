@@ -8,9 +8,7 @@ using System.Windows.Media.Imaging;
 
 namespace Tetris
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+
     public partial class MainWindow : Window
     {
         private readonly ImageSource[] tileImages = new ImageSource[]
@@ -103,18 +101,6 @@ namespace Tetris
             NextImage.Source = blockImages[next.Id];
         }
 
-        private void DrawHeldBlock(Block heldBlock)
-        {
-            if (heldBlock == null)
-            {
-                HoldImage.Source = blockImages[0];
-            }
-            else
-            {
-                HoldImage.Source = blockImages[heldBlock.Id];
-            }
-        }
-
         private void DrawGhostBlock(Block block)
         {
             int dropDistance = gameState.BlockDropDistance();
@@ -132,7 +118,6 @@ namespace Tetris
             DrawGhostBlock(gameState.CurrentBlock);
             DrawBlock(gameState.CurrentBlock);
             DrawNextBlock(gameState.BlockQueue);
-            DrawHeldBlock(gameState.HeldBlock);
             ScoreText.Text = $"Score: {gameState.Score}";
         }
 

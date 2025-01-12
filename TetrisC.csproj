@@ -8,12 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="assets\Background.png" />
+    <None Remove="assets\background.png" />
     <None Remove="assets\Block-Empty.png" />
     <None Remove="assets\Block-I.png" />
     <None Remove="assets\Block-J.png" />
     <None Remove="assets\Block-L.png" />
     <None Remove="assets\Block-O.png" />
+    <None Remove="assets\Block-S %282%29.png" />
     <None Remove="assets\Block-S.png" />
     <None Remove="assets\Block-T.png" />
     <None Remove="assets\Block-Z.png" />
@@ -41,7 +42,6 @@
     <Resource Include="assets\Block-Z.png" />
     <Resource Include="assets\TileBlue.png" />
     <Resource Include="assets\TileCyan.png" />
-    <Resource Include="assets\TileEmpty.png" />
     <Resource Include="assets\TileGreen.png" />
     <Resource Include="assets\TileOrange.png" />
     <Resource Include="assets\TilePurple.png" />
